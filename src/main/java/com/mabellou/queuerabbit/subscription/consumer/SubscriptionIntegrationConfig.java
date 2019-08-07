@@ -31,7 +31,7 @@ public class SubscriptionIntegrationConfig {
 
     @Bean
     Binding binding(@Qualifier("queueSubscription") Queue queueSubscription, TopicExchange exchange) {
-        return BindingBuilder.bind(queueSubscription).to(exchange).with("haha.hehe");
+        return BindingBuilder.bind(queueSubscription).to(exchange).with("haha.hehe2");
     }
 
     @Bean
